@@ -1,1 +1,0 @@
-mark-2.8.5.vmb: call delete('/home/amanusk/.vim/bundle/mark-2.8.5.vmb//autoload/mark.vim')|call delete('/home/amanusk/.vim/bundle/mark-2.8.5.vmb//autoload/mark/palettes.vim')|call delete('/home/amanusk/.vim/bundle/mark-2.8.5.vmb//plugin/mark.vim')|call delete('/home/amanusk/.vim/bundle/mark-2.8.5.vmb//doc/mark.txt')

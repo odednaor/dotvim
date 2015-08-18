@@ -1,3 +1,7 @@
+" Excute pathiogen
+execute pathogen#infect()
+call pathogen#helptags()
+
 "set term=nxterm
 
 " Set tab stop - how many columns a tab counts for. Linux kernel code expects each tab to be eight columns wide. Visual Studio expects each tab to be four columns wide. This is the only command here that will affect how existing text displays
@@ -138,8 +142,6 @@ map <leader>nu :set nu!<CR>
 vmap <C-j> gj
 vmap <C-k> gk
 
-" Excute pathiogen
-execute pathogen#infect()
 
 " some iretating commands
 command Q q
