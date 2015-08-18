@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/amanusk/.vim/bundle/majutsushi-tagbar-e872e67'
+let g:netrw_dirhist_2='/home/amanusk/.vim/bundle/mark-2.8.5.vmb'
+let g:netrw_dirhist_3='/mnt/hgfs/Shared_Folder/OS/Wet1/smash'
+let g:netrw_dirhist_4='/mnt/hgfs/Shared_Folder/OS/Wet1/smashf'
+let g:netrw_dirhist_5='/mnt/hgfs/Shared_Folder/OS/Wet3/Bank_Sim'
+let g:netrw_dirhist_6='/home/amanusk/.vim'
+let g:netrw_dirhist_7='/home/amanusk/Downloads/otp_src_17.4/make'
+let g:netrw_dirhist_8='/home/amanusk/.vim'
+let g:netrw_dirhist_9='/home/amanusk'
