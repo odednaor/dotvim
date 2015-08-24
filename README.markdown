@@ -1,8 +1,15 @@
---installation: \n
-	git clone git@github.com:AlexManuskin/dotvim.git ~/.vim \n
---make soft links \n
-	ln -s .vim/vimrc .vimrc \n
---Copy or make soft links for .bash files \n
+--installation: 
+	git clone git@github.com:AlexManuskin/dotvim.git ~/.vim 
+--make soft links 
+	ln -s .vim/vimrc .vimrc 
+--Copy or make soft links for .bash files 
+--Install the plugins on a new machine
+git submodule init 
+git submodule update 
 
-git submodule init \n
-git submodule update \n
+
+Update the plugins
+git submodule foreach git pull origin master
+
+--Add new submodule
+git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive

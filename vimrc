@@ -26,6 +26,9 @@ set number
 " Display line and column numbers in bottom right side
 set ruler
 
+" filetype
+filetype plugin indent on
+
 " Show special characters in the file
 "set list
 
@@ -180,4 +183,15 @@ if has("gui_running")
 	" set vertical column to 80 characters
 	"set colorcolumn=80
 endif
+
+" Python plugins additions
+" Override go-to.definition key shortcut to Ctrl-]
+let g:pymode_rope_goto_definition_bind = "<C-]>"
+
+ " Override run current python file key shortcut to Ctrl-Shift-e
+let g:pymode_run_bind = "<C-S-e>"
+
+ " Override view python doc key shortcut to Ctrl-Shift-d
+let g:pymode_doc_bind = "<C-S-d>"
+
 
