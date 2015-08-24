@@ -88,20 +88,6 @@ inoremap <F6> <C-o>:tabp<cr>
 map <F7> :tabn<cr>
 inoremap <F7> <C-o>:tabn<cr>
 
-""Map some shortcuts to end of line
-inoremap <C-a> <C-o>$
-inoremap <C-e> <C-o>0
-inoremap <C-w> <C-o>w
-inoremap <C-h> <C-o>h
-inoremap <C-l> <C-o>l
-inoremap <C-r> <C-o><C-r>
-
-map <C-a> $
-map <C-e> ^
-
-" Define saving a file ':w' to Ctrl+s and F4
-map <C-s> :w<cr>
-
 " set split to right and below instead of left and above
 set splitright
 set splitbelow
