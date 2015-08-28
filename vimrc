@@ -163,7 +163,11 @@ fun ToggleSpell()
     endif
 endfun
 highlight ExtraWhitespace ctermbg=green guibg=lightgreen
-map <F5> :call ToggleSpell() <cr>
+" Call spell Toggle
+map <F4> :call ToggleSpell() <cr>
+
+" Refresh the page
+map <F5> :edit <cr>
 
 "All kinds of addings to make word complete easier
 set completeopt=longest,menuone
@@ -183,6 +187,16 @@ if has("gui_running")
 	" set vertical column to 80 characters
 	"set colorcolumn=80
 endif
+
+" Powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
+" always show statusline
+set laststatus=2
+
+" Use 256 colours (Use this setting only if your terminal supports 256
+" colours)
+set t_Co=256
 
 " Python plugins additions
 " Override go-to.definition key shortcut to Ctrl-]
