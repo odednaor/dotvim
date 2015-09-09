@@ -208,4 +208,7 @@ let g:pymode_run_bind = "<C-S-e>"
  " Override view python doc key shortcut to Ctrl-Shift-d
 let g:pymode_doc_bind = "<C-S-d>"
 
+" Set auto compete to 0
+let g:ycm_min_num_of_chars_for_completion = 2
+
 
