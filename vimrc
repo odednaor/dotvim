@@ -153,7 +153,7 @@ let s:hilightws = 1
 fun ToggleSpell()
 	if s:hilightws
 		setlocal spell spelllang=en_us spell! spell?
-		2mat ErrorMsg '\%81v.'
+"		2mat ErrorMsg '\%81v.'
 		ToggleWhitespace
 		let s:hilightws = 0
     else
@@ -184,9 +184,10 @@ if has("gui_running")
 	set lines=999
 	set columns=999
 
-	" set vertical column to 80 characters
-	"set colorcolumn=80
 endif
+
+" set vertical column to 80 characters
+set colorcolumn=80
 
 " Powerline
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
