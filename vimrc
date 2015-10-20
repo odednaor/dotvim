@@ -212,4 +212,9 @@ let g:pymode_doc_bind = "<C-S-d>"
 " Set auto compete to 0
 let g:ycm_min_num_of_chars_for_completion = 2
 
-
+if has("autocmd")
+	autocmd BufReadPost *
+	\ if line("'\"") > 1 && line("'\"") <= line("$") |
+	\   exe "normal! g`\"" |
+	\ endif
+endif
