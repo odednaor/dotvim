@@ -143,10 +143,10 @@ command Qa qa
 command QA qa
 
 " noremap for arrows
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
+" noremap <Left> <NOP>
+" noremap <Right> <NOP>
 
 "A function to toggle white spaces on and off using <F5>
 let s:hilightws = 1
