@@ -42,6 +42,9 @@ set t_Co=256
 " Hide the mouse when typing text
 set mousehide
 
+" Ebanle mouse
+set mouse=a
+
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
@@ -73,10 +76,10 @@ let Tlist_Show_One_File=1
 
 
 "Tags plugin
-map <F2> :TagbarToggle<CR>
+map <F3> :TagbarToggle<CR>
 
 "Nerd tree plugin
-map <F3> :NERDTreeToggle<cr>
+map <F2> :NERDTreeTabsToggle<cr>
 
 "map F7  F8 to swich tabs
 map <F6> :tabp<cr>
@@ -191,6 +194,17 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source your vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+
+if has("autocmd")
+	autocmd BufReadPost *
+	\ if line("'\"") > 1 && line("'\"") <= line("$") |
+	\   exe "normal! g`\"" |
+	\ endif
+endif
+
+" Run NERDTreeTabs by default
+" let g:nerdtree_tabs_open_on_console_startup=1
+"
 " Python plugins additions
 " Override go-to.definition key shortcut to Ctrl-]
 let g:pymode_rope_goto_definition_bind = "<C-]>"
@@ -203,10 +217,3 @@ let g:pymode_doc_bind = "<C-S-d>"
 
 " Set auto compete to 0
 let g:ycm_min_num_of_chars_for_completion = 2
-
-if has("autocmd")
-	autocmd BufReadPost *
-	\ if line("'\"") > 1 && line("'\"") <= line("$") |
-	\   exe "normal! g`\"" |
-	\ endif
-endif
