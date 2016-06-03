@@ -29,18 +29,14 @@ set ruler
 " filetype
 filetype plugin indent on
 
-" Show special characters in the file
-"set list
-
 set nocompatible
 set backspace=2
 set foldmethod=marker
 
 " set color sheme
 colorscheme default
-
-" highlight Normal ctermfg=black ctermbg=yellow
-
+" Use 256 colours (Use this setting only if your terminal supports 256
+" colours)
 set t_Co=256
 
 " Hide the mouse when typing text
@@ -49,9 +45,6 @@ set mousehide
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
-
-"map <C-v> <MiddleMouse>
-"map! <C-v> <MiddleMouse>
 
 
 map <C-Space> <C-n>
@@ -133,14 +126,14 @@ vmap <C-k> gk
 
 
 " some iretating commands
-command Q q
-command W w
-command Wq wq
-command WQ wq
-command WA wa
-command Wa wa
-command Qa qa
-command QA qa
+command! Q q
+command! W w
+command! Wq wq
+command! WQ wq
+command! WA wa
+command! Wa wa
+command! Qa qa
+command! QA qa
 
 " noremap for arrows
 " noremap <Up> <NOP>
@@ -150,7 +143,7 @@ command QA qa
 
 "A function to toggle white spaces on and off using <F5>
 let s:hilightws = 1
-fun ToggleSpell()
+fun! ToggleSpell()
 	if s:hilightws
 		setlocal spell spelllang=en_us spell! spell?
 "		2mat ErrorMsg '\%81v.'
@@ -162,6 +155,7 @@ fun ToggleSpell()
         let s:hilightws = 1
     endif
 endfun
+
 highlight ExtraWhitespace ctermbg=green guibg=lightgreen
 " Call spell Toggle
 map <F4> :call ToggleSpell() <cr>
@@ -189,15 +183,13 @@ endif
 " set vertical column to 80 characters
 set colorcolumn=80
 
-" Powerline
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-
 " always show statusline
 set laststatus=2
 
-" Use 256 colours (Use this setting only if your terminal supports 256
-" colours)
-set t_Co=256
+" Open you vimrc from everywhere
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" Source your vimrc
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Python plugins additions
 " Override go-to.definition key shortcut to Ctrl-]
