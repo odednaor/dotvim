@@ -2,12 +2,10 @@
 ### --ALIASES-- ######
 ######################
 
-alias h='history'
-alias jobs="jobs -l"
-alias ll="ls -alF --color"
-alias valgrind="/usr/local/bin/valgrind"
-alias erlang="/usr/local/bin/erl"
-alias vim="/home/amanusk/vim74/src/vim"
+alias a='alias'
+a g='grep'
+a grc='g -r --color'
+a gv='g -v'
 
 #####
 #VARS
