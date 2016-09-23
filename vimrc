@@ -217,3 +217,16 @@ let g:pymode_doc_bind = "<C-S-d>"
 
 " Set auto compete to 0
 let g:ycm_min_num_of_chars_for_completion = 2
+
+" Used by YouCompleteMe
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" YouComlete me turn off auto
+let g:ycm_auto_trigger = 0
+
+" YouComplete me do not complete
+let g:ycm_min_num_of_chars_for_completion = 2
+
+" Turn off youcomleteme comment to enable
+let g:loaded_youcompleteme = 1
+
