@@ -202,6 +202,16 @@ if has("autocmd")
 	\ endif
 endif
 
+if has("autocmd")
+	filetype on
+	augroup my_autocmds
+		autocmd!
+		" Toggle insert/visual line numbers
+		autocmd InsertEnter * :set number | :set norelativenumber
+		autocmd InsertLeave * :set number | :set relativenumber
+	augroup END
+endif
+
 " Run NERDTreeTabs by default
 " let g:nerdtree_tabs_open_on_console_startup=1
 "
