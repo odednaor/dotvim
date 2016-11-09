@@ -1,5 +1,5 @@
 #--Prompt--#
-PS1="\[\e[1;38m\]{\A}\[\e[0m\]\[\e[00;37m\]:\[\e[0m\]\[\e[00;34m\][\w]\[\e[0m\]\[\e[00;30m\]> \[\e[0m\]"
+PS1="\[\e[1;38m\]\[\e[0m\]\[\e[00;34m\][\w]\[\e[0m\]\[\e[00;30m\]> \[\e[0m\]"
 
 # Commands to be executed before the prompt is displayed
 # Save current working dir
