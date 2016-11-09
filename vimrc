@@ -124,8 +124,8 @@ Wrap
 map <leader>nu :set nu!<CR>
 
 " Move easyly between visual lines
-vmap <C-j> gj
-vmap <C-k> gk
+map <C-j> gj
+map <C-k> gk
 
 
 " some iretating commands
