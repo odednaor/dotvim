@@ -245,3 +245,5 @@ let g:airline#extensions#csv#column_display = 'Name'
 
 let g:csv_no_conceal = 1
 " set clipboard=unnamedplus
+
+autocmd FileType python map <buffer> <leader>8 :call Pep8()<CR>
