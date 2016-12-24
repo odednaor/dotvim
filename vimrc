@@ -244,3 +244,4 @@ let g:airline_extensions = ['csv','whitespace']
 let g:airline#extensions#csv#column_display = 'Name'
 
 let g:csv_no_conceal = 1
+" set clipboard=unnamedplus
