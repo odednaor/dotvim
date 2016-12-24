@@ -240,3 +240,5 @@ let g:ycm_min_num_of_chars_for_completion = 2
 " Turn off youcomleteme comment to enable
 let g:loaded_youcompleteme = 1
 
+
+set clipboard=unnamedplus
