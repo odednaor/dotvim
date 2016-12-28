@@ -8,7 +8,7 @@ call pathogen#helptags()
 " Set soft tab stop - how many columns vim uses when you hit Tab in insert mode. If softtabstop is less than tabstop and expandtab is not set, vim will use a combination of tabs and spaces to make up the desired spacing. If softtabstop equals tabstop and expandtab is not set, vim will always use tabs. When expandtab is set, vim will always use the appropriate number of spaces
 " Set tab indentation - how many columns text is indented with the reindent operations (<< and >>) and automatic C-style indentation
 " Set no expand tab - when expandtab is set, hitting Tab in insert mode will produce the appropriate number of spaces
-:set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+:set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 
 " Indent following lines to the indentation of previous line.
@@ -247,3 +247,5 @@ let g:csv_no_conceal = 1
 " set clipboard=unnamedplus
 
 autocmd FileType python map <buffer> <leader>8 :call Pep8()<CR>
+
+autocmd BufNewFile,BufRead *.cl   set syntax=cpp
