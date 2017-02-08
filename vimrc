@@ -73,6 +73,8 @@ set hlsearch
 let Tlist_Use_Right_Window=1
 " Show tags for the current buffer only.
 let Tlist_Show_One_File=1
+" Open tagbar if already opened in new tab
+" autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 
 "Tags plugin
@@ -193,6 +195,10 @@ set laststatus=2
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " Source your vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
+" Do not sort by name
+let g:tagbar_sort = 0
+" Set width to 30
+let g:tagbar_width = 30
 
 
 if has("autocmd")
@@ -214,7 +220,9 @@ endif
 
 " Run NERDTreeTabs by default
 " let g:nerdtree_tabs_open_on_console_startup=1
-"
+" Set NERDTree to 30
+let NERDTreeWinSize = 20
+
 " Python plugins additions
 " Override go-to.definition key shortcut to Ctrl-]
 let g:pymode_rope_goto_definition_bind = "<C-]>"
