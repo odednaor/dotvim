@@ -35,10 +35,6 @@
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-	ignore = dirty
 [submodule "bundle/csv.vim"]
 	path = bundle/csv.vim
 	url = https://github.com/chrisbra/csv.vim.git
