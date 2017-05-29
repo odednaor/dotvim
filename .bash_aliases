@@ -16,6 +16,8 @@ alias l='less'
 alias ranger='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 alias r='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 
+export PINTOOL=~/Software/pin-3.2-81205-gcc-linux
+
 #####
 #VARS
 #####
