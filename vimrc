@@ -186,7 +186,8 @@ if has("gui_running")
 endif
 
 " set vertical column to 80 characters
-set colorcolumn=80
+" set colorcolumn=80
+
 
 " always show statusline
 set laststatus=2
@@ -213,8 +214,8 @@ if has("autocmd")
 	augroup my_autocmds
 		autocmd!
 		" Toggle insert/visual line numbers
-		autocmd InsertEnter * :set number | :set norelativenumber
-		autocmd InsertLeave * :set number | :set relativenumber
+		" autocmd InsertEnter * :set number | :set norelativenumber
+		" autocmd InsertLeave * :set number | :set relativenumber
 	augroup END
 endif
 
